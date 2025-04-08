@@ -1,0 +1,224 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AL HAMID COACHING CENTER</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f5f7f8;
+      color: #333;
+    }
+    header {
+      background: #004d40;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 60px 20px;
+      position: relative;
+    }
+    .hero-box {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      max-width: 600px;
+      width: 100%;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .hero-box h1 {
+      font-size: 2em;
+      color: #004d40;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    .hero-box p {
+      font-size: 1.1em;
+      color: #555;
+    }
+    .menu-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 24px;
+      color: white;
+      cursor: pointer;
+    }
+    .info-box {
+      position: relative;
+      z-index: 1100;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      padding: 20px;
+      margin: 20px;
+      max-width: 90%;
+      margin-top: 80px;
+    }
+    .info-box h3 {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    nav {
+      background: #00695c;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 14px 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      flex-wrap: nowrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 1em;
+      padding: 0 10px;
+      white-space: nowrap;
+      position: relative;
+    }
+    nav a::after {
+      content: '';
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -2px;
+      left: 0;
+      background-color: #80cbc4;
+      transition: width 0.3s ease-in-out;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      display: grid;
+      gap: 30px;
+    }
+    .section {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      scroll-margin-top: 100px;
+    }
+    h2 {
+      color: #00796b;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      font-size: 1.6em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+    ul {
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+    .contact p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    footer {
+      background: #004d40;
+      color: white;
+      text-align: center;
+      padding: 25px 10px;
+      font-size: 0.95em;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="hero-box">
+      <h1>AL HAMID COACHING CENTER</h1>
+      <p>Empowering Students From Nursery To Class 10 – CBSE, ICSE, JAC</p>
+    </div>
+    <div class="menu-icon" onclick="toggleInfo()">&#8942;</div>
+  </header>
+
+  <div id="teacherInfo" class="info-box" style="display:none;">
+    <p><strong>Main Teacher:</strong> Abdul Hamid is the guiding force behind AL HAMID COACHING CENTER. With deep subject knowledge and a commitment to personalized instruction, he builds a disciplined and engaging environment that fosters academic success.</p>
+    <br>
+    <p><strong>Website Creator & Assistant Teacher:</strong> Mohammad Azhar supports class activities, assists students, and ensures smooth classroom management. He is also the creator of this website, dedicated to enhancing student learning.</p>
+  </div>
+
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#courses">COURSES</a>
+    <a href="#schedule">SCHEDULE</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+  <div class="container">
+
+    <section id="about" class="section">
+      <h2>ABOUT</h2>
+      <p>Al HAMID COACHING CENTER provides structured, quality education for students from nursery to class 10. Our focus is on building strong academic foundations, clarity in concepts, and discipline through regular assessments and interaction.</p>
+    </section>
+
+    <section id="courses" class="section">
+      <h2>COURSES</h2>
+      <ul>
+        <li>All subjects – Nursery to Class 10</li>
+        <li>CBSE, ICSE, and JAC board syllabus </li>
+        <li>Maths, Science, English, Hindi, Social Studies etc. </li>
+        <li>Concept-based learning with practice tests</li>
+        <li>Interactive classes with personalized feedback</li>
+      </ul>
+    </section>
+
+    <section id="schedule" class="section">
+      <h2>SCHEDULE</h2>
+      <ul>
+        <li><strong>Morning Batch:</strong> 6:00 AM - 7:00 AM (Class 10)</li>
+        <li><strong>Evening Batch:</strong> 3:00 PM - 4:00 PM (Primary section - Class 7)</li>
+        <li><strong>Evening Batch:</strong> 4:00 PM - 5:00 PM (Primary section - Class 9)</li>
+        <li><strong>Evening Batch:</strong> 5:00 PM - 6:00 PM (Primary section - Class 10)</li>
+        <li><strong>Evening Batch:</strong> 6:00 PM - 7:00 PM (Special Batch)</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section contact">
+      <h2>CONTACT</h2>
+      <p><strong>Address:</strong> Madansahi Phatak, Sahebganj, Jharkhand, 816109</p>
+      <p><strong>Phone:</strong> +91-7903414537</p>
+      <p><strong>Email:</strong> asfarkhan840972@gmail.com</p>
+    </section>
+
+  </div>
+
+  <footer>
+    &copy; 2025 AL HAMID COACHING CENTER. All rights reserved.
+  </footer>
+
+  <script>
+    function toggleInfo() {
+      var info = document.getElementById("teacherInfo");
+      if (info.style.display === "none") {
+        info.style.display = "block";
+      } else {
+        info.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html> 
+
